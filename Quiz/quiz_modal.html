@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="quiz_modal.css" rel="stylesheet">
+<script src="quiz_modal.js"></script>
+</head>
+
+<body>
+
+	<a href="#modal">
+		<button>CLICK ME</button>
+	</a>
+	
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h2 class="modal_title">Quiz</h2>
+					<a href="#close" class="modal_close close">&times;</a>
+				</header>
+				<div class="modal_body">
+				
+					<div class="first">
+					
+						<form id="quiz" name="quiz">
+							
+							<!-- SPØRGSMÅL 1 -->
+							<p class="question">Hvad er hovedstaden i Danmark?</p>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="København"> København
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Roskilde"> Roskilde
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Odense"> Odense
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<!-- SPØRGSMÅL 2 -->
+							<p class="question">Hvad er 4 + 4?</p>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="7"> 7
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="8"> 8
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="9"> 9
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 3 -->
+							<p class="question">Hvad er 9 * 0?</p>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="9"> 9
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="90"> 90
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="0"> 0
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 4 -->
+							<p class="question">Spørgsmål 1</p>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Hartford"> X
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Hartford"> X
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Hartford"> X
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 5 -->
+							<p class="question">Spørgsmål 1</p>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="Hartford"> X
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="Hartford"> X
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="Hartford"> X
+								<span class="checkmark"></span>
+							</label><br>
+
+							<input id="button" type="button" value="Se resultat" onclick="check();">
+							
+							<div id="rie_feedback_container">
+								<img id="rie_feedback" src="../images_geografi/rie_basic.svg" alt="billede af rie, frontfiguren for siden">
+							</div>
+							
+							<audio controls id="player" style="display: none">
+								<source id="player-src" src="#">
+							</audio>
+						</form>
+						
+					</div>
+					
+					<div class="second">		
+					</div>
+					
+				</div>
+			</section>
+		</div>
+	</div>
+	
+</body>
+</html>
